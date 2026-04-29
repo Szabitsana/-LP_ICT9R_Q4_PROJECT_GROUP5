@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>School Calendar</title>
+
+<link rel="icon" type="image/png" href="OBMC-logo.png">
+
+<style>
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+
+body {
+  display: flex;
+  background: #f3f3f3;
+}
+
+
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background: #1f2937;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sidebar a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background: #374151;
+  color: white;
+}
+
+.main {
+  flex: 1;
+  padding: 30px;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 28px;
+}
+
+.header p {
+  color: gray;
+}
+
+/* CALENDAR */
+.calendar {
+  margin-top: 20px;
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* DAYS HEADER */
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: #555;
+}
+
+/* DATE GRID */
+.dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+/* DATE BOX */
+.date {
+  background: #f9fafb;
+  padding: 15px;
+  border-radius: 10px;
+  min-height: 80px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.date:hover {
+  background: #e5e7eb;
+}
+
+/* DATE NUMBER */
+.date span {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* EVENT */
+.event {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #6366f1;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+  <h2>📅</h2>
+  <a href="classrooms.html">Virtual Notebooks</a>
+  <a href="#">Tasks</a>
+  <a href="calendar.html">Calendar</a>
+  <a href="login.html">Logout</a>
+</div>
+
+<!-- TITLE -->
+<div class="main">
+  <div class="header">
+    <div>
+      <h1>SCHOOL CALENDAR</h1>
+      <p>MAY 2026</p>
+    </div>
+  </div>
+
+  <div class="calendar">
+
+    <!-- DAYS -->
+    <div class="days">
+      <div>Sun</div>
+      <div>Mon</div>
+      <div>Tue</div>
+      <div>Wed</div>
+      <div>Thu</div>
+      <div>Fri</div>
+      <div>Sat</div>
+    </div>
+
+  <!-- DATES -->
+<div class="dates">
+
+  <!-- FILLER (Sun - Thu) -->
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+
+  <!-- 1st -->
+  <div class="date"><span>1</span><div class="event">Labor Day</div></div>
+  <div class="date"><span>2</span></div>
+
+  <!-- 2nd -->
+  <div class="date"><span>3</span></div>
+  <div class="date"><span>4</span></div>
+  <div class="date"><span>5</span></div>
+  <div class="date"><span>6</span></div>
+  <div class="date"><span>7</span></div>
+  <div class="date"><span>8</span></div>
+  <div class="date"><span>9</span></div>
+
+  <!-- 3rd -->
+  <div class="date"><span>10</span></div>
+  <div class="date"><span>11</span></div>
+  <div class="date"><span>12</span></div>
+  <div class="date"><span>13</span></div>
+  <div class="date"><span>14</span></div>
+  <div class="date"><span>15</span></div>
+  <div class="date"><span>16</span></div>
+
+  <!-- 4th -->
+  <div class="date"><span>17</span></div>
+  <div class="date"><span>18</span></div>
+  <div class="date"><span>19</span></div>
+  <div class="date"><span>20</span><div class="event">
+  <div class="date"><span>21</span></div>
+  <div class="date"><span>22</span></div>
+  <div class="date"><span>23</span></div>
+
+  <!-- 5th -->
+  <div class="date"><span>24</span></div>
+  <div class="date"><span>25</span></div>
+  <div class="date"><span>26</span></div>
+  <div class="date"><span>27</span></div>
+  <div class="date"><span>28</span></div>
+  <div class="date"><span>29</span></div>
+  <div class="date"><span>30</span></div>
+
+  <!-- 6th -->
+  <div class="date"><span>31</span></div>
+
+</div>
+
+  </div>
+</div>
+
+</body>
+</html>
