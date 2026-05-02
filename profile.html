@@ -184,18 +184,42 @@ input:focus {
 </head>
 <body>
 
-<div class="navbar">
-    <div class="nav-left">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrL5tlCLN2eNDfSUJqzTmVibJspMru6SaVdg&s" class="logo">
-        <a href="#"> Dashboard </a>
-        <a href="#"> Virtual Notebooks </a>
-        <a href="#"> Tasks </a>
-        <a href="#"> Profile </a>
-    </div>
-    <div class="nav-right">
-        <button class="btn btn-light" style="color: rgb(63, 146, 55);"> Logout </button>
-    </div>
+<div class="sidebar">
+  <h2>📅</h2>
+  <a href="#">Home</a>
+  <a href="#">Virtual Notebooks</a>
+  <a href="#">Tasks</a>
+  <a href="calendar.html">Calendar</a>
+  <a href="index.html">Logout</a>
 </div>
+    
+<div class="content">
+
+<div class="main-container">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-secondary mb-4 rounded">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#">
+                <img src="MAIN LOGO.png" alt="logo" class="rounded-circle" height="50px">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html"><b>HOME</b></a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="vn.html"><b>CLASSROOMS</b></a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="calendar.html"><b>CALENDAR</b></a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="profile.html"><b>PROFILE</b></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
 
 <div class="container">
     <div class="form-card">
