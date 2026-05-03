@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
 
-    <!-- Icon -->
+    <!-- ICON -->
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="icon" type="image/png" href="OBMC LOGO for ICON.png">
 
@@ -104,27 +104,27 @@
     <div class="container justify-content">
 
         <!-- Logo -->
-            <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDaACeVLlQh6ALFsHShQ382WKBQXG5JtSIww&s" target="_blank">
+            <a href="file:///C:/Users/nahar/OneDrive/Documents/Desktop/Laspinas_ICT9Ruby_Q4Project_GroupNo5/OBMC%20LOGO2.png" target="_blank">
                 <img src="OBMC LOGO2.png" alt="logo" height=50px style="display: block; margin: auto;">
             </a>
         
         <br>
 
-        <!-- LOGIN HEADING -->
+        <!-- Login Heading -->
         <h4><center><b>Login</b></center></h4>
     
-        <!-- WHOLE FORM -->
+        <!-- Whole Form -->
         <form onsubmit="authenticate(event)">
 
-            <!-- USERNAME -->
+            <!-- Username -->
             <label for="username" style="text-align: center; font-weight: bold;">Username</label>
             <input type="text" id="UID" placeholder="Enter Username" required>
 
-            <!-- PASSWORD -->
+            <!-- Password -->
             <label for="password" style="text-align: center; font-weight: bold;">Password</label>
             <input type="password" id="PW" placeholder="Enter Password" required>
 
-            <!-- CHECK BOX FOR TOGGLE (STAY LOGGED IN) -->
+            <!-- Check Box for Toggle (Stay logged in) -->
                 <div class="form-check form-switch text-start mt-3">
                     <input class="form-check-input" type="checkbox" role="switch" id="stayLoggedIn" onclick="toggleStay()" style="cursor: w-resize;">
                     <label class="form-check-label">
@@ -132,15 +132,15 @@
                     </label>
                 </div>
 
-            <!-- HIDDEN DETAILS -->
+            <!-- Hidden Details -->
             <div id="stayDetails" style="display:none;" class="mt-2">
             <p class="note" style="color: #6d6d6d;"><i>Your session will stay active on this device.</i></p>
             </div>
             
-            <!-- SUBMIT BTN -->
+            <!-- Submit Btn -->
             <input type="submit" value="Login">
 
-            <!-- SUBMIT BTN -->
+            <!-- Cancel Btn -->
             <input style="margin-top: 2px;" type="reset" value="Cancel">
 
 
@@ -149,8 +149,8 @@
                 <p id="displayattempts"></p>
             </div>
 
-            <!-- EXAMPLE LINK -->
-            <center><a style="color: #6d6d6d;"  href="https://obmontessorilaspinas.orangeapps.ph/oa_school/" target="_self">Forgot username / password?</a></center>
+            <!-- Example Link (not actual link for actual use)-->
+            <center><a style="color: #6d6d6d;"  href="https://support.google.com/accounts/thread/209067421/i-forgot-my-username-and-password?hl=en" target="_self">Forgot username / password?</a></center>
         </form>
     
     </div>
