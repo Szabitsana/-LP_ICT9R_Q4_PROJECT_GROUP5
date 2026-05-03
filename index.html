@@ -16,78 +16,99 @@
   box-sizing: border-box;
 }
 
-/* LAYOUT */
+/* BODY */
 body {
   display: flex;
   background: #f5f7fa;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 /* SIDEBAR */
 .sidebar {
   width: 220px;
   height: 100vh;
-  background: #1f2937;
+  background: #111827;
   color: white;
   padding: 20px;
   position: fixed;
 }
 
-.sidebar h2 {
-  text-align: center;
-  margin-bottom: 30px;
+.sidebar-logo {
+  display: block;
+  width: 120px;
+  margin: 0 auto 30px;
 }
 
 .sidebar a {
   display: block;
-  color: #ccc;
+  color: #9ca3af;
   text-decoration: none;
   padding: 10px;
   border-radius: 8px;
   margin-bottom: 10px;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .sidebar a:hover {
-  background: #374151;
+  background: #1f2937;
   color: white;
 }
 
-/* MAIN CONTENT SHIFT */
+/* CONTENT */
 .content {
-  margin-left: 240px;
+  margin-left: 220px;
   width: 100%;
   padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
-/* EXISTING DESIGN */
+/* MAIN CARD */
 .main-container {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  background-color: #ffffff;
+  padding: 50px;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  max-width: 1000px;
+  width: 100%;
 }
 
+/* TEXT */
 .title-text {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #1e3a5f;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1e3a5f;
 }
 
+.subtitle {
+  color: #6b7280;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+/* IMAGE */
 .image-box img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  border-radius: 12px;
 }
 
+/* BUTTON */
 .button {
-    background-color: navy;
-    border-radius: 12px;
-    padding: 10px 20px;
-    border: none;
+  background: linear-gradient(135deg, #1e3a5f, #2563eb);
+  border-radius: 10px;
+  padding: 12px 24px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  margin-top: 20px;
+  transition: 0.2s;
 }
 
-.text-white{
-    margin-top: 1px;
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
 }
 
 </style>
@@ -97,47 +118,40 @@ body {
 
 <!-- SIDEBAR -->
 <div class="sidebar">
-  <h2>📅</h2>
-  <a href="#">Home</a>
-  <a href="#">Virtual Notebooks</a>
-  <a href="#">Tasks</a>
+<img src="MAIN LOGO.png" alt="Logo" class=" rounded-circle sidebar-logo">
+  <a href="index.html">Home</a>
+  <a href="notebooks.html">Virtual Notebooks</a>
   <a href="calendar.html">Calendar</a>
-  <a href="index.html">Logout</a>
+  <a href="login.html">Logout</a>
 </div>
 
 <!-- CONTENT -->
 <div class="content">
 
-<div class="main-container">
+  <div class="main-container">
 
-        </div>
-    </nav>
+    <div class="row align-items-center g-4">
 
-    <!-- MAIN CONTENT -->
-    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h1 class="title-text">
+          OB MONTESSORI CENTER
+        </h1>
+        <p class="subtitle">
+          Educating Future Leaders.
+        </p>
 
-        <div class="col-md-6">
-            <h1 class="title-text" style="font-family: Georgia, 'Times New Roman', Times, serif;">
-                OB MONTESSORI CENTER
-            </h1>
-            <p class="text-muted" style="font-family: Georgia, 'Times New Roman', Times, serif;">
-                Educating Future Leaders.
-            </p>
-        </div>
-
-        <div class="col-md-6 text-center image-box">
-            <img src="Generations.jpeg" alt="school">
-        </div>
-
-    </div>
-
-    <div class="mt-3">
-        <button class="button">
-            <p class="text-white" style="font-family: Georgia;" href="login.html">Get Started</p>
+        <button class="button" href="login.html">
+          Get Started
         </button>
+      </div>
+
+      <div class="col-md-6 text-center image-box">
+        <img src="Generations.jpeg" alt="school">
+      </div>
+
     </div>
 
-</div>
+  </div>
 
 </div>
 
