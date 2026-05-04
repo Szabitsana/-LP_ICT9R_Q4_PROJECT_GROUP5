@@ -55,37 +55,7 @@
             width: 100%;
             opacity: 0.15; /* transparent effect */
         }
-        
-        /* INPUT */
-        input[type="text"], input[type="password"] {
-            width: 100%;
-            padding: 5px 10px;
-            margin: 5px 0;
-            border: 1px solid #ccc;
-            border-radius: 15px;
-            text-align: center;
-        }
-        
-        /* BUTTONS */
-        input[type="submit"] {
-            background-color: lightslategray;
-            color: white;
-            padding: 5px;
-            border-radius: 10px;
-            border: none;
-            width: 100%;
-        }
-        
-        input[type="reset"] {
-            background-color: rgb(177, 186, 194);
-            color: white;
-            padding: 5px;
-            border-radius: 10px;
-            border: none;
-            width: 100%;
-            margin-top: 5px;
-        }
-        
+
         /* FOOTER (FIXED + FULL WIDTH) */
         .footer {
             width: 100%;
@@ -94,6 +64,38 @@
             text-align: center;
             padding: 10px 0;
             font-size: 0.9rem;
+        }
+        
+        /* Style for input */
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 5px 10px;
+            margin: 5px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        /* Style for button Submit*/
+        input[type="submit"] {
+            background-color: lightslategray;
+            color: white;
+            padding: 5px;
+            border-radius: 10px;
+            border: none;
+            width: 100%;
+        }
+
+        /* Style for button Reset*/
+        input[type="reset"] {
+            background-color: rgb(177, 186, 194);
+            color: white;
+            padding: 5px;
+            border-radius: 10px;
+            border: none;
+            width: 100%;
         }
 
         /* Style for output */
@@ -107,7 +109,7 @@
             display: block;
             margin-top: 10px;
         }
-
+        
         /* The 'off' state background */
         .slider {
             background-color: #ccc; 
@@ -117,6 +119,7 @@
         input:checked + .slider {
             background-color: rgb(143, 201, 176); /* Change this to your desired color */
         }
+
 
         .form-check-input:checked {
             background-color: #8bddf0;
