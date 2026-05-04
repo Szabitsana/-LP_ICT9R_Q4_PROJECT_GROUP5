@@ -148,6 +148,26 @@
   </div>
   
   <!-- CONTENT -->
+
+<div class="left">
+    <img id="profilePreview" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcHVuqgJPs1mFipnjsVwsFIYiYwTaulS-1_w&s" class="profile-pic">
+    <input type="file" class="file-input" accept="image/*" onchange="previewImage(event)">
+</div>
+
+    <script>
+    function previewImage(event) {
+        const input = event.target;
+        const preview = document.getElementById("profilePreview");
+
+        if (input.files && input.files[0]) {
+             const reader = new FileReader();
+        reader.onload = function(e) {
+                preview.src = e.target.result;
+        }
+            reader.readAsDataURL(input.files[0]);}}
+
+    </script>
+  
   <div class="row">
 <div class="col">
 <label for="name" style="color: aliceblue;"> Student ID </label>
