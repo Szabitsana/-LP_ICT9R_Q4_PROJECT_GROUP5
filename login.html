@@ -1,221 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-    <title>Login</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- ICON -->
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <link rel="icon" type="image/png" href="OBMC LOGO for ICON.png">
+<title>Login</title>
 
-    <!-- BOOTSTRAP LINK -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- ICON -->
+<link rel="icon" type="image/png" href="OBMC LOGO for ICON.png">
 
-    <!-- STYLE -->
-    <style>
-        /* Body */
-        body{
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            text-align: center;
-            background-color: #f5f7fa;
-            margin-top: 50px;
-        }
+<!-- BOOTSTRAP -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-        /* Container */
-        .container{
-            background: rgb(255, 255, 255);
-            border: 1px solid #ccc;
-            border-radius: 25px;
-            border: none;
-            padding: 30px;
-            width: 335px;
-            max-width: 100%;
-            margin: auto;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.08);
-        }
+<style>
 
-        /* Input */
-        input[type="text"], input[type="password"] {
-            width: 100%;
-            padding: 5px 10px;
-            margin: 5px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-            border-radius: 15px;
-            text-align: center;
-        }
+/* BODY */
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
-        /* Button Submit*/
-        input[type="submit"] {
-            background-color: lightslategray;
-            color: white;
-            padding: 5px;
-            border-radius: 10px;
-            border: none;
-            width: 100%;
-        }
+/* MAIN LAYOUT */
+.main-wrapper{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
 
-        /* Button Reset*/
-        input[type="reset"] {
-            background-color: rgb(177, 186, 194);
-            color: white;
-            padding: 5px;
-            border-radius: 10px;
-            border: none;
-            width: 100%;
-        }
+/* LOGIN BOX */
+.container{
+    background: white;
+    border-radius: 25px;
+    padding: 30px;
+    width: 335px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
 
-        /* Output */
-        output{
-            margin-top: 15px;
-            text-align: left;
-        }
+/* RIGHT IMAGE */
+.side-image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-        /* Label */
-        label {
-            display: block;
-            margin-top: 10px;
-        }
-        
-        /* The 'off' state background */
-        .slider {
-            background-color: #ccc; 
-        }
+.side-image img{
+    max-width: 500px;
+    width: 100%;
+    opacity: 0.15; /* transparent effect */
+}
 
-        /* The 'on' state background */
-        input:checked + .slider {
-            background-color: rgb(143, 201, 176); /* Change this to your desired color */
-        }
+/* INPUT */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 5px 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    text-align: center;
+}
 
+/* BUTTONS */
+input[type="submit"] {
+    background-color: lightslategray;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+}
 
-        .form-check-input:checked {
-            background-color: #8bddf0;
-            border-color: #8bddf0;
-        }
+input[type="reset"] {
+    background-color: rgb(177, 186, 194);
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    margin-top: 5px;
+}
 
-        /* FOOTER */
-        .footer {
-          position: fixed;
-          bottom: 0;
-          left: 220px;
-          width: calc(100% - 220px);
-          background: #111827;
-          color: #9ca3af;
-          text-align: center;
-          padding: 10px 0;
-          font-size: 0.9rem;
-        }
-        
-    </style>
+/* FOOTER (FIXED + FULL WIDTH) */
+.footer {
+    width: 100%;
+    background: #111827;
+    color: #9ca3af;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
 
+</style>
 </head>
+
 <body>
 
-    <!-- BOX -->
-    <div class="container justify-content">
+<div class="main-wrapper">
+
+    <!-- LOGIN BOX -->
+    <div class="container">
 
         <!-- Logo -->
-            <a href="C:\Users\nahar\OneDrive\Documents\Desktop\Laspinas_ICT9Ruby_Q4Project_GroupNo5\OBMC LOGO2.png" target="_blank">
-                <img src="OBMC LOGO2.png" alt="logo" height=50px style="display: block; margin: auto;">
-            </a>
-        
+        <img src="OBMC LOGO2.png" alt="logo" height="50" style="display:block; margin:auto;">
+
         <br>
 
-        <!-- Login Heading -->
-        <h4><center><b>Login</b></center></h4>
-    
-        <!-- Whole Form -->
+        <h4 class="text-center"><b>Login</b></h4>
+
         <form onsubmit="authenticate(event)">
 
-            <!-- Username -->
-            <label for="username" style="text-align: center; font-weight: bold;">Username</label>
+            <label style="font-weight:bold;">Username</label>
             <input type="text" id="UID" placeholder="Enter Username" required>
 
-            <!-- Password -->
-            <label for="password" style="text-align: center; font-weight: bold;">Password</label>
+            <label style="font-weight:bold;">Password</label>
             <input type="password" id="PW" placeholder="Enter Password" required>
 
-            <!-- Check Box for Toggle (Stay logged in) -->
-                <div class="form-check form-switch text-start mt-3">
-                    <input class="form-check-input" type="checkbox" role="switch" id="stayLoggedIn" onclick="toggleStay()" style="cursor: w-resize;">
-                    <label class="form-check-label">
-                        <p>Stay logged in</p>
-                    </label>
-                </div>
-
-            <!-- Hidden Details -->
-            <div id="stayDetails" style="display:none;" class="mt-2">
-            <p class="note" style="color: #6d6d6d;"><i>Your session will stay active on this device.</i></p>
+            <div class="form-check form-switch text-start mt-3">
+                <input class="form-check-input" type="checkbox" id="stayLoggedIn" onclick="toggleStay()">
+                <label class="form-check-label">Stay logged in</label>
             </div>
-            
-            <!-- Submit Btn -->
+
+            <div id="stayDetails" style="display:none;" class="mt-2">
+                <p style="color:#6d6d6d;"><i>Your session will stay active on this device.</i></p>
+            </div>
+
             <input type="submit" value="Login">
+            <input type="reset" value="Cancel">
 
-            <!-- Cancel Btn -->
-            <input style="margin-top: 2px;" type="reset" value="Cancel">
-
-
-            <!-- Result Display -->
-            <div class="result" style="margin-top: 15px; text-align: left; color:  rgb(141, 234, 255); font-weight: bold;">
+            <div style="margin-top:15px; color:#8deaff; font-weight:bold;">
                 <p id="displayattempts"></p>
             </div>
 
-            <!-- Example Link (not actual link for actual use)-->
-            <center><a style="color: #6d6d6d;"  href="https://support.google.com/accounts/thread/209067421/i-forgot-my-username-and-password?hl=en" target="_self">Forgot username / password?</a></center>
+            <center>
+                <a style="color:#6d6d6d;" href="#">Forgot username / password?</a>
+            </center>
+
         </form>
-
     </div>
 
-    <!-- FOOTER -->
-    <div class="footer">
-        Group 5 / 9 Ruby 25'26
+    <!-- RIGHT SIDE IMAGE -->
+    <div class="side-image">
+        <img src="Generations.png" alt="design">
     </div>
 
-    <script>
+</div>
 
-                let attempts = 0; 
-        const maxAttempts = 3;
+<!-- FOOTER -->
+<div class="footer">
+    Group 5 / 9 Ruby 25'26
+</div>
 
-        function authenticate(event) {
-            event.preventDefault(); // stop reload
+<script>
 
-            var username = document.getElementById("UID").value;
-            var password = document.getElementById("PW").value;
+let attempts = 0; 
+const maxAttempts = 3;
 
-            if (username === "student01" && password === "12345678") {
-                alert("Login successful! Welcome, " + username + "!");
-                window.location.href = "index.html";
-            } else {
-                attempts++; // increase attempts
+function authenticate(event) {
+    event.preventDefault();
 
-                let remaining = maxAttempts - attempts;
+    var username = document.getElementById("UID").value;
+    var password = document.getElementById("PW").value;
 
-                alert("Incorrect username or password!");
+    if (username === "student01" && password === "12345678") {
+        alert("Login successful!");
+        window.location.href = "index.html";
+    } else {
+        attempts++;
+        let remaining = maxAttempts - attempts;
 
-                // display attempts
-                document.getElementById("displayattempts").innerHTML =
-                    "⚠ Attempts left: " + remaining;
+        alert("Incorrect username or password!");
 
-                if (attempts >= maxAttempts) {
-                    alert("Too many failed attempts. Login disabled.");
-                    document.getElementById("Submit").disabled = true;
+        document.getElementById("displayattempts").innerHTML =
+            "Attempts left: " + remaining;
 
-                    document.getElementById("displayattempts").innerHTML =
-                        "❌ Maximum attempts reached.";
-                }
-            }
+        if (attempts >= maxAttempts) {
+            alert("Too many failed attempts.");
         }
+    }
+}
 
-        function toggleStay() {
-            let cb = document.getElementById("stayLoggedIn");
-            document.getElementById("stayDetails").style.display = cb.checked ? "block" : "none";
-        }
-    </script>
-    
-    <!-- BOOTSTRAP -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+function toggleStay() {
+    let cb = document.getElementById("stayLoggedIn");
+    document.getElementById("stayDetails").style.display = cb.checked ? "block" : "none";
+}
+
+</script>
+
 </body>
 </html>
