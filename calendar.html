@@ -6,134 +6,135 @@
     
   <title>School Calendar</title>
 
-  <!-- Icon -->
+  <!-- ICON -->
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   <link rel="icon" type="image/png" href="OBMC LOGO for ICON.png">
 
-<style>
-
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-/* BODY */
-body {
-  display: flex;
-  background: #f5f7fa;
-}
-
-/* SIDEBAR (MATCHED TO HOMEPAGE) */
-.sidebar {
-  width: 220px;
-  height: 100vh;
-  background: #111827;
-  color: white;
-  padding: 20px;
-  position: fixed;
-}
-
-.sidebar h2 {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.sidebar a {
-  display: block;
-  color: #9ca3af;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 8px;
-  margin-bottom: 10px;
-  transition: 0.2s;
-}
-
-.sidebar a:hover {
-  background: #1f2937;
-  color: white;
-}
-
-/* MAIN */
-.main {
-  margin-left: 220px;
-  width: 100%;
-  padding: 30px;
-}
-
-/* HEADER */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header h1 {
-  font-size: 28px;
-}
-
-.header p {
-  color: gray;
-}
-
-/* CALENDAR */
-.calendar {
-  margin-top: 20px;
-  background: white;
-  border-radius: 15px;
-  padding: 20px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-/* DAYS */
-.days {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  margin-bottom: 10px;
-  text-align: center;
-  font-weight: bold;
-  color: #555;
-}
-
-/* DATES */
-.dates {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 10px;
-}
-
-/* DATE BOX */
-.date {
-  background: #f9fafb;
-  padding: 15px;
-  border-radius: 10px;
-  min-height: 80px;
-  transition: 0.3s;
-}
-
-.date:hover {
-  background: #e5e7eb;
-}
-
-.date span {
-  font-weight: bold;
-  font-size: 14px;
-}
-
-/* EVENT */
-.event {
-  margin-top: 5px;
-  font-size: 12px;
-  color: #6366f1;
-}
-
-/* EMPTY CELLS */
-.empty {
-  visibility: hidden;
-}
-
-</style>
+  <style>
+  
+    /* RESET */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    
+    /* BODY */
+    body {
+      display: flex;
+      background: #f5f7fa;
+    }
+    
+    /* SIDEBAR (MATCHED TO HOMEPAGE) */
+    .sidebar {
+      width: 220px;
+      height: 100vh;
+      background: #111827;
+      color: white;
+      padding: 20px;
+      position: fixed;
+    }
+    
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    .sidebar a {
+      display: block;
+      color: #9ca3af;
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      transition: 0.2s;
+    }
+    
+    .sidebar a:hover {
+      background: #1f2937;
+      color: white;
+    }
+    
+    /* MAIN */
+    .main {
+      margin-left: 220px;
+      width: 100%;
+      padding: 30px;
+    }
+    
+    /* HEADER */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .header h1 {
+      font-size: 28px;
+    }
+    
+    .header p {
+      color: gray;
+    }
+    
+    /* CALENDAR */
+    .calendar {
+      margin-top: 20px;
+      background: white;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    /* DAYS */
+    .days {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      margin-bottom: 10px;
+      text-align: center;
+      font-weight: bold;
+      color: #555;
+    }
+    
+    /* DATES */
+    .dates {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 10px;
+    }
+    
+    /* DATE BOX */
+    .date {
+      background: #f9fafb;
+      padding: 15px;
+      border-radius: 10px;
+      min-height: 80px;
+      transition: 0.3s;
+    }
+    
+    .date:hover {
+      background: #e5e7eb;
+    }
+    
+    .date span {
+      font-weight: bold;
+      font-size: 14px;
+    }
+    
+    /* EVENT */
+    .event {
+      margin-top: 5px;
+      font-size: 12px;
+      color: #6366f1;
+    }
+    
+    /* EMPTY CELLS */
+    .empty {
+      visibility: hidden;
+    }
+  
+  </style>
 
 </head>
 
